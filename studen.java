@@ -1,69 +1,55 @@
-package student;
+package helllo;
 
 public class studen {
-	private  static  int[]  id=new int[30];
-	private static  String[] stname=new String[30];
-	private static  String[] cj=new String[30];
-	public static  int  i=0;
+	private  static  String[]  id=new String[30];
+	private static  int[] stname=new int[30];
+	public static int i=0;
 
 	
 	public static void studens(){
-		for(int s=0;s<30;s++){
-			id[s]=0;
-			stname[s]=" ";
-			cj[s]=" ";
+		for(int i=0;i<30;i++){
+			id[i]=" ";
+			stname[i]=0;
 		}
 	}
-	public static String name(int s,String a,String c){
-		String out="添加失败！";
+	public static void name(String s,int a){
+		
 		id[i]=s;stname[i]=a;
-		cj[i]=c;
-		i=i+1;
-		out ="添加成功！";
-		return out;
+		i++;
 	}
-	public static  String  cha(int s){
-		String out ="";
+	public static  void  cha(String a){
 		for(int j=0;j<i;j++){
-			if(id[j]==s){
-				out= "学号："+id[j]+"姓名："+stname[j]+" 成绩："+cj[j];
-			}
-			else{
-				out="无此学生";
+			if(id[j]==a){
+				System.out.println("chaxujieguo:"+id[j]+" "+stname[j]);
 			}
 		}
-		return out;
-	}		
-public static  String shan(int s){
-	String out ="删除失败！";
+	}
+	
+		
+public static  void shan(String s){
 	for(int j=0;j<i;j++){
 		if(id[j]==s){
 			for(int s1=j;s1<i;s1++){
 				id[s1]=id[s1+1];
 				stname[s1]=stname[s1+1];
-				cj[s1]=cj[s1+1];
 			}
 			i--;
-			out="删除成功！";
 		}
+	}
+		
 		
 	}
-	return out;	
-	}
-	public static String chengji(){
-		String out ="<html><body>";
-		if(i==0){
-			out="当前无学生！";
-		}
-		else{
+	public static void chengji(){
 		for(int j=0;j<i;j++){
 			
-			out= out+"学号："+id[j]+"姓名："+stname[j]+" 成绩："+cj[j]+"<br>";
-			
+			 
+			 System.out.println(id[j]);
+			 System.out.println(stname[j]); 
 		}
-		}
-		out=out+"</body></html>";
-		return out; 
+		
+		
+		
+		 
 	 }
 	
 	}

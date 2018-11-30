@@ -1,5 +1,4 @@
-package student;
-
+package helllo;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -12,8 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import student.yonghu;
-import student.studen;
+import helllo.yonghu;
+import helllo.studen;
 //主类，程序的入口
 public class begin
 {
@@ -27,8 +26,8 @@ public class begin
 class begindemo extends JFrame
 {
  //登录的用户名和密码
- private final String userName = "sa";
- private final String password = "123456";
+ private final String userName = "123";
+ private final String password = "123";
  //声明屏幕的宽高，程序窗口的宽高
  private int windowWidth;
  private int windowHeight;

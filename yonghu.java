@@ -1,5 +1,4 @@
-package student;
-
+package helllo;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -12,10 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import student.chazhao;
-import student.studen;
-import student.tianjia;
-import student.*;
+
+import helllo.studen;
 public class yonghu extends JFrame{
 	private int windowWidth;
 	 private int windowHeight;
@@ -77,40 +74,7 @@ public class yonghu extends JFrame{
 	  //当按钮被单击时自动调动这个方法
 	  public void actionPerformed(ActionEvent event)
 	  {
-		  tianjia tj=new tianjia("添加学生");
-	  }
-	 
-	 });
-	 chazhao.addActionListener(new ActionListener()
-	 {
-	  @SuppressWarnings("deprecation")
-	  @Override
-	  //当按钮被单击时自动调动这个方法
-	  public void actionPerformed(ActionEvent event)
-	  {
-		  chazhao cz=new chazhao("查找学生");
-	  }
-	 
-	 });
-	 shanchu.addActionListener(new ActionListener()
-	 {
-	  @SuppressWarnings("deprecation")
-	  @Override
-	  //当按钮被单击时自动调动这个方法
-	  public void actionPerformed(ActionEvent event)
-	  {
-		  shanchu sc=new shanchu("查找学生");
-	  }
-	 
-	 });
-	 suoyou.addActionListener(new ActionListener()
-	 {
-	  @SuppressWarnings("deprecation")
-	  @Override
-	  //当按钮被单击时自动调动这个方法
-	  public void actionPerformed(ActionEvent event)
-	  {
-		  suoyou sy=new suoyou("所有学生");
+		  
 	  }
 	 
 	 });
